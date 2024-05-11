@@ -817,7 +817,7 @@ a {
   }
   .footer__form form button {
     font-size: 12px;
-    font-weight: 700;
+    padding: 12px 20px;
   }
 }
 
