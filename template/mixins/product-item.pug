@@ -1,11 +1,11 @@
-mixin product-item(image, title, gender, age, price, className)
+mixin product-item(image, title, gender, age, price, className, link)
     div(class=`product-item ${className ? className : ""}`)
         div(class="product-item__img")
-            a(href="#") 
+            a(href=link) 
                 img(src=image, alt=title)
         div(class="product-item__content")
             h3(class="product-item__title")
-                a(href="#") #{title}
+                a(href=link) #{title}
             div(class="product-item__meta")
                 div(class="product-item__meta-item")
                     span Giống: 
