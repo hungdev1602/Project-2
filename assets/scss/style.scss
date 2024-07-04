@@ -1217,7 +1217,7 @@ a {
     display: flex;
     align-items: center;
     img {
-      width: calc(100% / 5 - 48px / 5);
+      width: 100%;
       aspect-ratio: 1/1;
       margin-right: 12px;
       cursor: pointer;
@@ -1330,3 +1330,8 @@ a {
   }
 }
 // End Share
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+}

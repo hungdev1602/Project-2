@@ -3,9 +3,11 @@
   <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="shortcut icon" href="https://cdn.daca.vn/media/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Trang chi tiết sản phẩm</title>
   </head>
   <body> 
@@ -39,8 +41,30 @@
       <div class="container"> 
         <div class="product-detail__wrap"> 
           <div class="product-detail__left"> 
-            <div class="product-detail__img-top"> <img src="./assets/img/detail_1.jpg" alt="Shiba"></div>
-            <div class="product-detail__img-bottom"> <img src="./assets/img/detail_1-1.jpg" alt="Shiba"><img src="./assets/img/detail_2.jpg" alt="Shiba"><img src="./assets/img/detail_3.jpg" alt="Shiba"><img src="./assets/img/detail_4.jpg" alt="Shiba"><img src="./assets/img/detail_5.jpg" alt="Shiba"></div>
+            <div class="product-detail__img-top"> 
+              <div class="swiper mySwiper2" id="viewerZoom">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://static.vecteezy.com/system/resources/previews/026/727/385/non_2x/cute-baby-shiba-in-the-park-free-photo.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/shiba-inu-dog-photography_1409-4240.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://rukminim2.flixcart.com/image/850/1000/kyhlfgw0/poster/d/m/n/small-cute-shiba-inu-dog-poster-multicolor-photo-paper-print-12-original-imagapewgaywgxud.jpeg?q=90&amp;crop=false" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://static.vecteezy.com/system/resources/previews/009/505/292/non_2x/shiba-inu-puppy-in-spring-white-flowers-portrait-of-a-cute-japanese-dog-red-dog-photo.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://img.freepik.com/premium-photo/portrait-shiba-inu-autumn-park_95945-362.jpg" alt="Shiba"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="product-detail__img-bottom"> 
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://static.vecteezy.com/system/resources/previews/026/727/385/non_2x/cute-baby-shiba-in-the-park-free-photo.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/shiba-inu-dog-photography_1409-4240.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://rukminim2.flixcart.com/image/850/1000/kyhlfgw0/poster/d/m/n/small-cute-shiba-inu-dog-poster-multicolor-photo-paper-print-12-original-imagapewgaywgxud.jpeg?q=90&amp;crop=false" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://static.vecteezy.com/system/resources/previews/009/505/292/non_2x/shiba-inu-puppy-in-spring-white-flowers-portrait-of-a-cute-japanese-dog-red-dog-photo.jpg" alt="Shiba"></div>
+                  <div class="swiper-slide"><img src="https://img.freepik.com/premium-photo/portrait-shiba-inu-autumn-park_95945-362.jpg" alt="Shiba"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="product-detail__right">
             <div class="breadcrumb">
@@ -177,5 +201,8 @@
       </div>
     </footer>
     <!-- End Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"> </script>
+    <script src="./assets/js/script.js"> </script>
   </body>
 </html>
